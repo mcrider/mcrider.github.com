@@ -11,39 +11,45 @@
 			line-height: 1em;
 			list-style: none;
 		}
+		@font-face {
+			font-family: 'RalewayThin';
+			src: url('fonts/raleway_thin-webfont.eot');
+			src: local('☺'), url('fonts/raleway_thin-webfont.woff') format('woff'), url('fonts/raleway_thin-webfont.ttf') format('truetype'), url('fonts/raleway_thin-webfont.svg#webfont') format('svg');
+			font-weight: normal;
+			font-style: normal; }
 		h1 { font-size: 2.8em; }
-		h2 { font-size: 1.8em; 
+		h2 { font-size: 1.8em;
 			margin-bottom: 1em;
 			text-transform: uppercase;
 		}
-		h3 { font-size: 1.2em; }
+		h3{ font: 2em RalewayThin, Arial, sans-serif; letter-spacing: -0.9px; font-weight: normal; }
 		#contentCenter {
 			text-align: center;
 			vertical-align: middle;
 		}
 		#pensLogoCenter {
-			position: fixed;
+			/*position: fixed;
 			top: 50%;
 			left: 30%;
 			margin-top: -174px;
 			margin-left: -112px;
-			border-style: none;
+			border-style: none;*/
 		}
 		#pensLogo {
 			vertical-align: top;
 		}
 		* html #pensLogoCenter { position:absolute }
-		
+
 		#content {
 			width: 100%;
 		}
-		
+
 		#contentLeft {
 			vertical-align:top;
 			position: absolute;
 			width: 140px;
 			float: left;
-			
+
 		}
 		#contentRight {
 			vertical-align:top;
@@ -59,7 +65,7 @@
 			margin: 10px;
 			width: 100%;
 			padding: 10px 10px 15px 15px;
-							 
+
 			background-color: #333333;
 			filter:alpha(opacity=70);
 			-moz-opacity:0.7;
@@ -68,14 +74,41 @@
 		#resume {
 			text-align: center;
 		}
+
+		#piIsMC {
+			margin-top: 78px;
+		}
+		a.socialLink {
+			margin-left: 43px;
+		} a.first { margin-left: 0px; }
+		img.socialIcon {
+			width: 58px;
+		}
+
 	</style>
-	
-	
+	<!-- script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script-->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-19273338-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 </head>
 <body>
 	<div id="contentCenter">
 		<img id="pensLogoCenter" src="img/piLogo.gif" />
+		<div id="piIsMc">
+			<h3>Pensive Industries == Matthew Crider</h3>
+			<a class="socialLink first" href="mailto:mattcrider@gmail.com" title="Email me"><img class="socialIcon" src="socialIcons/1/gmail.png" alt="Email"></a>
+			<a class="socialLink" href="http://www.linkedin.com/pub/matt-crider/8/982/92" title="LinkedIn Profile"><img class="socialIcon" src="socialIcons/1/linkedin.png" alt="LinkedIn Profile"></a>
+			<a class="socialLink" href="https://profiles.google.com/mattcrider/about" title="Google Profile"><img class="socialIcon" src="socialIcons/1/google.png" alt="Google Profile"></a>
+			<a class="socialLink" href="http://www.facebook.com/mcriddy" title="Facebook Profile" ><img class="socialIcon" src="socialIcons/1/facebook.png" alt="Facebook Profile"></a>
+		</div>
 	</div>
-
 </body>
 </html>
